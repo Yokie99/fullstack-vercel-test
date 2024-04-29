@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@layer components {
+    @font-face {
+      font-family: titillium;
+      src: url('./Fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+    }
+    @font-face {
+        font-family: bebas;
+        src: url('./Fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+      }
+  }
+
+  .inputbg{
+    background-color: transparent!important;
+    --tw-ring-color: rgb(0 0 0 / 0) !important;
+    box-shadow: none;
+  }
+
+  .placeholder{
+    background-image: url('assets/images/Group13.png');
+    background-color: slategray;
+    background-position: center;
+    background-size: cover;
+}
+
+.Court{
+    background-image: url('assets/images/court.jpg');
+    background-color: slategray;
+    background-position: center;
+    background-size: cover;
+}
+
+.Tennis{
+    background-image: url('assets/images/Tennis.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Football{
+    background-image: url('assets/images/Football.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Basketball{
+    background-image: url('assets/images/Basketball.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Soccer{
+    background-image: url('assets/images/Soccer.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Baseball{
+    background-image: url('assets/images/Baseball.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Volleyball{
+    background-image: url('assets/images/Volleyball.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Wrestling{
+    background-image: url('assets/images/Wrestling.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Golf{
+    background-image: url('assets/images/Golf.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Swimming{
+    background-image: url('assets/images/Swimming.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Hockey{
+    background-image: url('assets/images/Hockey.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Gymnastics{
+    background-image: url('assets/images/Gymnastics.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Track-and-Field{
+    background-image: url('assets/images/Track-and-Field.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Water-Polo{
+    background-image: url('assets/images/Water-Polo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.textShadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
+-webkit-text-stroke-width: 0.75px;
+-webkit-text-stroke-color: #000;
+color: white;
+}
+
+.CenterScreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Calendar css */
+  .fc .fc-button{
+  @apply bg-violet-800 hover:bg-violet-900  ;
+  width: 3.4vw
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  @apply bg-violet-600;
+}
+
+.fc .fc-button-primary:disabled {
+  @apply bg-violet-600;
+}
+.fc-v-event {
+  @apply bg-violet-500 border border-violet-600 ;
+  
+}
+  
+  input {
+    @apply px-2;
+  }
+    .fc-header-toolbar {
+      display: inline-block;
+      padding: 4px 4px;
+      
+      @apply space-x-8;
+  }
+  
+  .fc-day {
+    @apply m-8;
+  }
+  
+  .fc-scrollgrid-sync-table {
+    @apply w-full;
+  }
